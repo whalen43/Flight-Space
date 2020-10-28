@@ -1,0 +1,24 @@
+<mat-accordion multi>
+  <mat-expansion-panel *ngFor="let planet of planets" hideToggle>
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{planet.name}}
+    </mat-panel-title>
+    <mat-panel-description>
+      <span class="text-muted">Created: </span>{{planet.created | date}}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+    <ul class="list-group">
+      <li class="list-group-item"><span class="text-muted">Rotation Period: </span>{{planet.rotation_period}}</li>
+      <li class="list-group-item"><span class="text-muted">Orbital Period: </span>{{planet.orbital_period}}</li>
+      <li class="list-group-item"><span class="text-muted">Diameter: </span>{{planet.diameter}}</li>
+      <li class="list-group-item"><span class="text-muted">Climate: </span>{{planet.climate}}</li>
+      <li class="list-group-item"><span class="text-muted">Terrain: </span>{{planet.terrain}}</li>
+      <li class="list-group-item"><span class="text-muted">Population: </span>{{planet.population}}</li>
+    </ul>
+  </mat-expansion-panel>
+</mat-accordion>
+
+
+
+

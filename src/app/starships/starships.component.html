@@ -1,0 +1,21 @@
+<div class="card">
+  <h2 class="ml-2">Starships</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Model</th>
+        <th scope="col">Manufacturer</th>
+        <th scope="col">Max speed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let starship of starships">
+        <td>{{starship.name}}</td>
+        <td>{{starship.model}}</td>
+        <td>{{starship.manufacturer}}</td>
+        <td>{{starship.max_atmosphering_speed}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

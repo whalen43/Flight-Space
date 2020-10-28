@@ -1,0 +1,16 @@
+<div class="card ">
+  <h2 class="card-title ml-2">People</h2>
+  <input type="email" class="form-control" id="search-text" aria-describedby="search-text"
+        [(ngModel)]="searchText" placeholder="Enter text to search"
+        autofocus>
+  <ul class="list-group">
+    <li class="list-group" *ngFor="let person of people | filter: searchText; let i = index">
+      <a class="list-group-item list-group-item-action" routerLink="/person/{{i + 1}}">
+        {{person.name}}
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+

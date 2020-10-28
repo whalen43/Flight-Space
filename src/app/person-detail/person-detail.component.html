@@ -1,0 +1,22 @@
+<div *ngIf="person">
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">{{person.name}}</h5>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item"><span class="text-muted">Height: </span>{{person.height}}</li>
+        <li class="list-group-item"><span class="text-muted">Mass: </span>{{person.mass}}</li>
+        <li class="list-group-item"><span class="text-muted">Hair color: </span>{{person.hair_color | uppercase}}</li>
+        <li class="list-group-item"><span class="text-muted">Skin color: </span>{{person.skin_color | uppercase}}</li>
+        <li class="list-group-item"><span class="text-muted">Eye color: </span>{{person.eye_color | uppercase}}</li>
+        <li class="list-group-item"><span class="text-muted">Birth year: </span>{{person.birth_year}}</li>
+        <li class="list-group-item"><span class="text-muted">Gender: </span>{{person.gender | uppercase}}</li>
+      </ul>
+      <div class="card-footer bg-transparent">
+        <p class="text-center text-muted"><span>Created: </span>{{person.created | date}}</p>
+        <p class="text-center text-muted"><span>Last modified: </span>{{person.edited | date}}</p>
+      </div>
+    </div>
+</div>
+
+
